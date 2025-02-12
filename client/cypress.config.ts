@@ -12,6 +12,8 @@ export default defineConfig({
       });
     },
   },
+  viewportWidth: 1250,
+  viewportHeight: 1200,
 
   component: {
     devServer: {
