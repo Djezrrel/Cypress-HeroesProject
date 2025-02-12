@@ -1,58 +1,38 @@
-# Cypress Heroes Demo Application
-
-This is a demo application that shows how to use Cypress to run end-to-end,
-component, and API tests against an application.
-
-## Getting Started
-
-The app is a mono repo that uses npm workspaces. Once you clone the project,
-install the dependencies at the root folder:
-
-```sh
-npm install
-```
-
-After that a few more things need to be set up (databases and such), to do so run:
-
-```sh
-npm run setup
-```
+# Cypress Heroes Projeto
+Este é um aplicativo de demonstração que mostra como usar o Cypress para executar de ponta a ponta, componente e testes de API em um aplicativo.
 
 
-To launch the app for development, run:
+## 🚀 Automação de Testes no Heroes App com Cypress! 🚀
 
-```sh
-npm run dev
-```
+No mundo da Qualidade de Software, a automação de testes é um dos pilares para garantir que nossas aplicações funcionem de maneira fluida e sem falhas. Recentemente, trabalhei em automações para o Heroes App com a incrível ferramenta Cypress, utilizada pela equipe Cypress.
 
-This will start both the client and server apps in dev mode. The site will be
-available at http://localhost:3000.
+Aqui está uma amostra do que desenvolvi:
 
-## App Overview
+## 🔧 O que fiz:
 
-The Cypress Heroes app consists of a frontend client app written in React that
-uses Vite, as well as a backend app that uses NestJS.
+1º Criação de automações de testes para funcionalidades críticas.
 
-### React Client App
+2º Desenvolvimento de casos de teste para diferentes cenários de login e interações com o sistema.
 
-The React client app is located in the **client** folder. It is a standard React [Vite](https://vitejs.dev/) app.
+3º Validação de entradas e saídas com Cypress, integrando uploads de arquivos e interações com o banco de dados.
 
-Todo: fill out
+4º Testes de usabilidade e sugestões de melhorias no design da interface.
 
-### NestJS Server App
 
-The server app is in the **server** folder. It is built with the [NestJS](https://nestjs.com/) Node.js framework. It uses [Prisma](https://www.prisma.io/) for the database ORM.
+## 💡 Propostas de Melhoria:
 
-#### Database seeding and resetting
+1º **Tela Inicial Simplificada e Atraente**: A tela inicial atualmente exibe apenas a logo cy.heroes e um botão de Login, com o restante da tela em branco. A proposta é dar mais vida à tela inicial, talvez incluindo uma breve descrição do aplicativo ou uma animação simples, para tornar a interface mais envolvente e informativa, sem perder a simplicidade.
 
-The database is seeded from the **server/prisma/seed.ts** script when you set up the app. If at any time you want to reset the database back to its initial state, run:
+2º **Animações para Feedback Visual**: Melhorar a experiência do usuário com animações que indiquem claramente quando o login e o logout ocorreram, proporcionando um feedback visual mais fluido e dinâmico.
 
-```sh
-npm run resetdb
-```
+3º **Mensagens de Aviso**: Incluir mensagens de confirmação ao criar um herói, garantindo que o usuário saiba que a ação foi bem-sucedida, como "Herói Criado com Sucesso!"
 
-## Environment Variables
+## 🔧 Tecnologias Utilizadas:
 
-The client app uses an environment variable to know what the URL is for the
-backend api named `VITE_API_URL`. It defaults to "http://localhost:3001" for use
-in dev mode, and should be overriden in other environments/modes.
+º Cypress para automação de testes end-to-end.
+
+º JavaScript para implementar as funcionalidades.
+
+º HTML e CSS para melhorar a interface do usuário.
+
+## Automação de testes é fundamental para garantir a qualidade e a eficiência do nosso desenvolvimento, e o Cypress tem se mostrado uma ferramenta indispensável no processo. 🚀
